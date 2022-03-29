@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefactorCodeChallenge", "RefactorCodeChallenge\RefactorCodeChallenge.csproj", "{6708D2E7-8BD3-4775-B44A-BEEA025AE312}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{21BFA478-A79A-4A6A-AAF9-B887A78B1BBC}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorCodeChallengeTests", "RefactorCodeChallengeTests\RefactorCodeChallengeTests.csproj", "{B80C53C0-A66B-4B63-A5F1-A15DB1773BC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6708D2E7-8BD3-4775-B44A-BEEA025AE312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6708D2E7-8BD3-4775-B44A-BEEA025AE312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6708D2E7-8BD3-4775-B44A-BEEA025AE312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6708D2E7-8BD3-4775-B44A-BEEA025AE312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80C53C0-A66B-4B63-A5F1-A15DB1773BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80C53C0-A66B-4B63-A5F1-A15DB1773BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80C53C0-A66B-4B63-A5F1-A15DB1773BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80C53C0-A66B-4B63-A5F1-A15DB1773BC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A0004A7-D84C-47BE-BC55-34EB2629983F}
+	EndGlobalSection
+EndGlobal
