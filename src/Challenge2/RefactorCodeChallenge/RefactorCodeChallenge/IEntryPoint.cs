@@ -1,5 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿namespace RefactorCodeChallenge;
+
 public interface IEntryPoint
 {
-    void PrintChart();
+    void Run();
 }

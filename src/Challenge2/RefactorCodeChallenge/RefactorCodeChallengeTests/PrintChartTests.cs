@@ -8,5 +8,11 @@ namespace RefactorCodeChallengeTests
         }
 
         // Todo: 2. Write a test to cover the print chart method and check the output
+
+        [Test]
+        public void GetDeepestPointReturnsDeepestPoint()
+        {
+
+        }
     }
 }

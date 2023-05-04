@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using RefactorCodeChallenge;
 
 var serviceProvider = new ServiceCollection()
     .AddSingleton<IEntryPoint, EntryPoint>()
@@ -6,4 +7,4 @@ var serviceProvider = new ServiceCollection()
 
 var entryPoint = serviceProvider.GetRequiredService<IEntryPoint>();
 
-entryPoint.PrintChart();
+entryPoint.Run();
