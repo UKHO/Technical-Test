@@ -14,17 +14,16 @@
         <div class="mb-3">
             <input type="text" id="searchInput" class="form-control" placeholder="Search by title">
         </div>
-
-        <button id="sortButton" class="btn btn-primary mb-3">Sort by Title</button>
+        <!--class="btn btn-primary mb-3"-->
+        <button id="sortButton" >Sort by Title</button>
         <div id="bookList" class="row"></div>
     </div>
 
     <script>
 
-        // Fetch data from API and display the book list
         fetch('/api/books')
-          .then(response => response.json())
-          .then(data => displayBooks(data));
+            .then(response => response.json())
+            .then(data => displayBooks(data));
 
         function displayBooks(books) {
           const bookList = document.getElementById('bookList');
@@ -63,10 +62,9 @@
             } 
             else
             {
-                // Fetch data from API and display the book list
                 fetch('/api/books')
-                    .then(response => response.json())
-                    .then(data => displayBooks(data));
+                .then(response => response.json())
+                .then(data => displayBooks(data));
             }
         });
 
@@ -87,6 +85,14 @@
 
         });
 
+
+        //function fetchBooks() {
+        //    // Fetch data from API and display the book list
+        //    fetch('/api/books')
+        //        .then(response => response.json())
+        //        .then(data => displayBooks(data));
+            
+        //}
     </script>
 
 </body>

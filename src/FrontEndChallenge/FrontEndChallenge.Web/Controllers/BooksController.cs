@@ -1,29 +1,36 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using FrontendChallenge.Web.Repo;
 
 [ApiController]
 [Route("api/[controller]")]
 public class BooksController : ControllerBase
 
 {
-    private List<Book> books = new List<Book>()
-        {
-             new Book { Id = 1, Title = "Something", Author = "Someone", CoverImage = "https://picsum.photos/200/300" },
-             new Book { Id = 2, Title = "How to test", Author = "Mr Tester", CoverImage = "https://picsum.photos/200/300" },
-             new Book { Id = 3, Title = "Writing a book", Author = "Author", CoverImage = "https://picsum.photos/200/300" }
-
-        };
+    private IBookRepo bookRepo = new BookRepo(); 
 
     [HttpGet]
     public ActionResult GetBooks()
     {
-        return Ok(books);
+        return Ok(bookRepo.GetBooks());
     }
 
     [HttpGet("{id}")]
     public ActionResult SearchBooks(string searchTerm)
     {
-        var filteredBooks = books.Where(book => book.Title.ToLower().Contains(searchTerm.ToLower())).ToList();
+        var bl = new List<Book>();
 
-        return Ok(filteredBooks);
+        foreach (var book in bookRepo.GetBooks())
+        {
+            var title = book.Title.ToLower();
+            if (title.Contains(searchTerm.ToLower()))
+            {
+                bl.Add(book);
+            }
+        }
+        //var filteredBooks = books.Where(book => book.Title.ToLower()
+        //                                        .Contains(searchTerm.ToLower()))
+        //                                        .ToList();
+
+        return Ok(bl);
     }
 }
