@@ -26,10 +26,6 @@ public class BooksController : ControllerBase
                 bl.Add(book);
             }
         }
-        //var filteredBooks = books.Where(book => book.Title.ToLower()
-        //                                        .Contains(searchTerm.ToLower()))
-        //                                        .ToList();
-
         return Ok(bl);
     }
 }
