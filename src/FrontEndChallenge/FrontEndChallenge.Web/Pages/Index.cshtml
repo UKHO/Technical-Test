@@ -47,25 +47,16 @@
 
             bookList.appendChild(bookElement);
           });
-
         }
 
         // Filter books based on search input
         const searchInput = document.getElementById('searchInput');
 
         searchInput.addEventListener('keyup', () => {
-          const searchTerm = searchInput.value.toLowerCase();
-          if (searchTerm != ""){
-                fetch(`/api/books/search?searchTerm=${searchTerm}`)
-                    .then(response => response.json())
-                    .then(data => displayBooks(data));
-            } 
-            else
-            {
-                fetch('/api/books')
+            const searchTerm = searchInput.value.toLowerCase();
+            fetch(`/api/books/search?searchTerm=${searchTerm}`)
                 .then(response => response.json())
                 .then(data => displayBooks(data));
-            }
         });
 
 
@@ -85,14 +76,6 @@
 
         });
 
-
-        //function fetchBooks() {
-        //    // Fetch data from API and display the book list
-        //    fetch('/api/books')
-        //        .then(response => response.json())
-        //        .then(data => displayBooks(data));
-            
-        //}
     </script>
 
 </body>

@@ -4,7 +4,6 @@ using FrontendChallenge.Web.Repo;
 [ApiController]
 [Route("api/[controller]")]
 public class BooksController : ControllerBase
-
 {
     private IBookRepo bookRepo = new BookRepo(); 
 
