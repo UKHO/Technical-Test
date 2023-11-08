@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using ChartConversionApp;
+using Microsoft.Extensions.DependencyInjection;
+
+var serviceProvider = new ServiceCollection()
+    .AddSingleton<IEntryPoint, EntryPoint>()
+    .BuildServiceProvider();
+
+var entryPoint = serviceProvider.GetRequiredService<IEntryPoint>();
+
+entryPoint.Run();
