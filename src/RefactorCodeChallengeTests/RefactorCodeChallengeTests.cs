@@ -42,11 +42,12 @@ public sealed class RefactorCodeChallengeTests
     [Test]
     public void GetNameOfLongestBattleship_GivenACollectionOfShips_ReturnsTheNameOfTheLongestBattleship()
     {
+        const string expectedShipName = ShipOneName;
         var sut = new ShipManager(TestCollectionOfShipsInput);
 
-        var nameOfLongestBattleship = sut.GetNameOfLongestBattleship();
+        var actualNameOfLongestBattleship = sut.GetNameOfLongestBattleship();
 
-        Assert.That(nameOfLongestBattleship, Is.EqualTo(ShipOneName));
+        Assert.That(actualNameOfLongestBattleship, Is.EqualTo(expectedShipName));
     }
 
     private static CollectionOfShips CreateTestCollectionOfShips()
