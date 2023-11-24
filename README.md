@@ -1,20 +1,5 @@
 # Technical Test
 
-## Local environment setup
+These are the technical tests that form part of the interview process for software engineering roles at the UKHO.
 
-### Prerequisites
-- An IDE of your choice (we recommend Visual Studio of Visual Studio Code)
-- The .NET 6 SDK
-- Git
-
-### Setup and commands
-1. Open a suitable directory in terminal and run the following command  
-    `git clone https://github.com/UKHO/Technical-Test.git`
-1. Then run  
-    `cd ./Technical-Test/src`
-
-**To run the program**  
-`dotnet run --project=RefactorCodeChallenge`
-
-**To run the tests**  
-`dotnet test`
+The test you will take will be decided upon during your interview.
