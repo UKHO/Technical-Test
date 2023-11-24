@@ -51,9 +51,11 @@ public class ShipManager : IShipManager
     {
         var length = _collectionOfShips.Battleships[0].LengthInMeters;
         length += _collectionOfShips.Battleships[1].LengthInMeters;
+        length += _collectionOfShips.Battleships[2].LengthInMeters;
 
         length += _collectionOfShips.CruiseShips[0].LengthInMeters;
         length += _collectionOfShips.CruiseShips[1].LengthInMeters;
+        length += _collectionOfShips.CruiseShips[2].LengthInMeters;
 
         return length;
     }
