@@ -6,7 +6,7 @@ public class EntryPoint : IEntryPoint
 {
     private readonly IManagerMaker _managerMaker;
 
-    private const string ApiEndPoint = "https://raw.githubusercontent.com/UKHO/Technical-Test/Development/FixMissingApi/src/Challenge1/ExampleData/";
+    private const string ApiEndPoint = "https://raw.githubusercontent.com/UKHO/Technical-Test/main/src/Challenge1/ExampleData/";
 
     public EntryPoint(IManagerMaker managerMaker)
     {
