@@ -6,7 +6,7 @@ public class EntryPoint : IEntryPoint
 {
     private readonly IManagerMaker _managerMaker;
 
-    private const string ApiEndPoint = "https://lemon-pond-0c20b7303.1.azurestaticapps.net/";
+    private const string ApiEndPoint = "https://raw.githubusercontent.com/UKHO/Technical-Test/main/src/Challenge1/ExampleData/";
 
     public EntryPoint(IManagerMaker managerMaker)
     {

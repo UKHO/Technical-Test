@@ -1,0 +1,45 @@
+{
+    "battleships" :[
+      {
+        "name": "HMS Python",
+        "numberOfGuns": 20,
+        "lengthInMeters": 150,
+        "helipad": true
+      },
+      {
+        "name": "HMS Ruby",
+        "numberOfGuns": 7,
+        "lengthInMeters": 65,
+        "helipad": false
+      },
+      {
+        "name": "HMS Haskell",
+        "numberOfGuns": 15,
+        "lengthInMeters": 200,
+        "helipad": true
+      }
+      
+    ],
+    "cruiseShips":
+    [
+      {
+        "name": "The Number One",
+        "numberOfEmergencyRIBs": 3,
+        "LengthInMeters": 59,
+        "features": ["pool", "football pitch"]
+      },
+      {
+        "name": "The Number Two",
+        "numberOfEmergencyRIBs": 7,
+        "LengthInMeters": 170,
+        "features": ["pool", "helipad"]
+      },
+      {
+        "name": "The Number Three",
+        "numberOfEmergencyRIBs": 1,
+        "LengthInMeters": 100,
+        "features": ["surf lagoon"]
+      }
+      
+    ]
+  }
