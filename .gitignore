@@ -351,3 +351,19 @@ MigrationBackup/
 
 # Ncrunch
 *ncrunch*
+
+#Rider
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea.RefactorCodeChallenge.iml
+.idea/
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
