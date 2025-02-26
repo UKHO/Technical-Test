@@ -4,7 +4,7 @@
 
 ### Prerequisites
 
-- An IDE of your choice (we recommend Visual Studio of Visual Studio Code)
+- An IDE of your choice (we recommend Visual Studio or Visual Studio Code)
 - The .NET 6 SDK
 - Git
 
