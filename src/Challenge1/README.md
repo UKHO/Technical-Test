@@ -5,7 +5,7 @@
 ### Prerequisites
 
 - An IDE of your choice (we recommend Visual Studio or Visual Studio Code)
-- The .NET 6 SDK
+- The .NET 8 SDK
 - Git
 
 ### Setup and commands
