@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json;
 
 namespace RefactorCodeChallenge;
 
@@ -21,7 +21,7 @@ public class EntryPoint : IEntryPoint
 
         var thing = client.GetAsync("ships.json").Result;
 
-        var jsonResult = JsonConvert.DeserializeObject<CollectionOfShips>(thing.Content.ReadAsStringAsync().Result);
+        var jsonResult = JsonSerializer.Deserialize<CollectionOfShips>(thing.Content.ReadAsStringAsync().Result);
 
         var shipManager = _managerMaker.MakeManager(jsonResult);
 
